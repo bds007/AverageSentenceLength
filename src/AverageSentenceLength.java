@@ -5,13 +5,6 @@ import java.util.Scanner;
 
 public class AverageSentenceLength {
 	
-	/*
-	 * @input - File name: input file (*.txt)
-	 * @input - delimitter marker: -d
-	 * @input - delimitter symbol: string("")
-	 * @input - Minimum word marker: -l
-	 * @input - minimum word length: int(x)
-	 */
 	public static void main(String[] args) throws IOException{
 		
 		String file = args[0];
