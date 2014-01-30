@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 
+<<<<<<< HEAD
 /**
  * Returns the average number length of the sentances contained in a text
  * file based on user's defined sentence delimitter and user's defined
@@ -27,6 +28,8 @@ import java.util.Scanner;
 
 
 
+=======
+>>>>>>> origin/WorkingBranch
 public class AverageSentenceLength {
 	
 	public static void main(String[] args) throws IOException{
@@ -55,10 +58,16 @@ public class AverageSentenceLength {
 		text = text.trim();
 		int numberOfValidSentences = (text.split(delimitter)).length;
 		
+<<<<<<< HEAD
 		//System.out.println((int)(numberOfValidWords/numberOfValidSentences));
 		
 		System.out.println("Output: " + (int)(numberOfValidWords/numberOfValidSentences));
 	
+=======
+		System.out.println((int)(numberOfValidWords/numberOfValidSentences));
+		
+		
+>>>>>>> origin/WorkingBranch
 	
 	}
 
