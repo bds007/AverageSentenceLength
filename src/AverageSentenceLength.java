@@ -20,7 +20,8 @@ import java.util.Scanner;
  * @param  filename a name of text file (or full path of the text file) 
  * 					The text file contains sentences written in English.
  * @param  -d		This parameter indicates that next parameter is 
- * 					sentence delimiter. 
+ * 					sentence delimiter. A series of delimiter can be added. For example two delimiters 
+ * 					can be supplied by -d "." and -d "?".
  * @parameter -l	This parameter indicates that the next parameter is
  * 					minimum number of character to be considered a 'word'.
  * @return      	Average length of sentence for qualified words rounded down to 
@@ -35,8 +36,6 @@ import java.util.Scanner;
 public class AverageSentenceLength {
 	
 	public static void main(String[] args) throws IOException{
-		
-		ArrayList<String> delimiterList = new ArrayList<String>();
 		
 		String delimiter="";
 		for (int i = 0; i < args.length; i++)
@@ -67,6 +66,8 @@ public class AverageSentenceLength {
 				numberOfValidWords++;
 			}
 		}
+		
+		reader.close();
 		text = text.trim();
 		System.out.println(text);
 		int numberOfValidSentences = (text.split("["+delimiter+"]")).length;
